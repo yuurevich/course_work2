@@ -12,5 +12,5 @@ def api_posts():
 
 @api_blueprint.route('/posts/<pk>')
 def api_post(pk):
-    data = get_post_by_pk(pk)[0]
+    data = get_post_by_pk(pk)
     return jsonify(data)
